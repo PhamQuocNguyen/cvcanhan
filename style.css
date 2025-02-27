@@ -1,0 +1,131 @@
+/* Reset mặc định */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container chính */
+.cv-container {
+    width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: url("back.png") no-repeat center/cover;
+}
+
+/* Header - Ảnh & Thông tin cá nhân */
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.cv-header span {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.cv-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Icon mạng xã hội */
+.cv-header a {
+    color: #007bff;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.cv-header a:hover {
+    color: #0056b3;
+}
+
+/* Nội dung chính */
+.cv-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Cột trái & Cột phải */
+.cv-left, .cv-right {
+    width: 50%;
+}
+
+/* Tiêu đề chính */
+.cv-left h3, .cv-right h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.cv-left ul {
+    list-style: none;
+    line-height: 1.6;
+}
+
+.cv-left ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Kinh nghiệm & Dự án */
+.cv-right h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.cv-right p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Nút Tải CV */
+.download-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+}
